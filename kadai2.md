@@ -1,4 +1,5 @@
-#課題２レポート  
+#課題２レポート
+
 「skytree」を原画像とする．この画像は縦512画像，横512画素による正方形のディジタルカラー画像を使用する  
   
 ORG=imread('skytree.png'); % 原画像の入力  
@@ -10,12 +11,10 @@ imagesc(ORG);colormap(gray);colorbar;axis image; % 画像の表示
 
 
 原画像を2階調画像にするにはビット深度の半分をしきい値に0と1で分ける。  
-
 IMG = ORG>128;  
 imagesc(IMG); colormap(gray); colorbar;  axis image;  
   
 ２階調画像にした結果を図２に示す。  
-
 ![図２](https://github.com/16ec044/lecture_image_processing/blob/own/image/2-2.png)  
 図２ ２階調画像  
 
@@ -28,7 +27,6 @@ IMG = IMG0 + IMG1 + IMG2;
 imagesc(IMG); colormap(gray); colorbar;  axis image;  
 
 ４階調画像を図３に示す。  
-
 ![図３](https://github.com/16ec044/lecture_image_processing/blob/own/image/2-3.png)  
 図３　４階調画像  
 
@@ -41,7 +39,5 @@ for i=1:7
 end  
 IMG=sum(IMG,3);%各階調の加算  
 imagesc(IMG);colormap(gray);colorbar;axis image; % 画像の表示  
-
 ８階調画像を図４に示す。  
-
 ![図４](https://github.com/16ec044/lecture_image_processing/blob/own/image/2-4.png)  
