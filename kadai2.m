@@ -4,10 +4,10 @@
 % 課題作成にあたっては「Lenna」以外の画像を用いよ．
 
 clear; % 変数のオールクリア
-
-ORG=imread('Lenna.png'); % 原画像の入力
-ORG = rgb2gray(ORG); colormap(gray); colorbar;
-imagesc(ORG); axis image; % 画像の表示
+close all;
+ORG=imread('skytree.png'); % 原画像の入力
+ORG = rgb2gray(ORG);%RGBからグレイスケールに変換
+imagesc(ORG);colormap(gray);colorbar;axis image; % 画像の表示
 pause; % 一時停止
 
 % ２階調画像の生成
@@ -21,5 +21,14 @@ IMG1 = ORG>128;
 IMG2 = ORG>192;
 IMG = IMG0 + IMG1 + IMG2;
 imagesc(IMG); colormap(gray); colorbar;  axis image;
+pause;
 
-% ８階調については，各自検討してください．
+%　８階調画像の生成
+IMG=zeros(length(ORG(:,1)),length(ORG(1,:)),7);%配列の用意
+for i=1:7
+    IMG(:,:,i)=ORG>32*i;
+end
+IMG=sum(IMG,3);%各階調の加算
+imagesc(IMG);colormap(gray);colorbar;axis image; % 画像の表示
+
+
