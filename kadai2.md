@@ -10,6 +10,7 @@ imagesc(ORG);colormap(gray);colorbar;axis image; % 画像の表示
 図１グレイスケール  
 
 
+
 原画像を2階調画像にするにはビット深度の半分をしきい値に0と1で分ける。  
 IMG = ORG>128;  
 imagesc(IMG); colormap(gray); colorbar;  axis image;  
@@ -17,6 +18,7 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 ２階調画像にした結果を図２に示す。  
 ![図２](https://github.com/16ec044/lecture_image_processing/blob/own/image/2-2.png)  
 図２ ２階調画像  
+
 
 
 ４階調画像を作るには4等分する64,128,192をしきい値として0,1,2,3で重みをつけて表示する。  
@@ -31,8 +33,8 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 図３　４階調画像  
 
 
-８階調画像を作るには８等分するしきい値で同様に重みをつける。  
 
+８階調画像を作るには８等分するしきい値で同様に重みをつける。  
 IMG=zeros(length(ORG(:,1)),length(ORG(1,:)),7);%配列の用意  
 for i=1:7  
     IMG(:,:,i)=ORG>32*i;  
