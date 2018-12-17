@@ -42,3 +42,4 @@ imagesc(IMG);colormap(gray);colorbar;axis image; % 画像の表示
 
 ８階調画像を図４に示す。  
 ![図４](https://github.com/16ec044/lecture_image_processing/blob/own/image/2-4.png)  
+図４　8階調画像  
