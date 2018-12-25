@@ -6,9 +6,12 @@
 clear; close all;
 ORG = imread('skytree.png'); % 画像の読み込み
 ORG = rgb2gray(ORG); % 白黒濃淡画像に変換
-
+imagesc(ORG); colormap(gray); colorbar;axis image; %マスクの表示
+pause;
 %---ダイナミックレンジを240までにする------
 mask=ORG>240; %240以上の値を見つけるマスク
+imagesc(mask); colormap(gray); colorbar;axis image; %マスクの表示
+pause;
 ORG(mask)=240; %240以上の値を240にする
 %----------------------------------------
 imagesc(ORG); colormap(gray); colorbar;axis image; % 画像の表示

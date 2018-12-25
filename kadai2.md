@@ -7,7 +7,7 @@ ORG = rgb2gray(ORG);%RGBからグレイスケールに変換
 imagesc(ORG);colormap(gray);colorbar;axis image; % 画像の表示  
 によって、原画像を読み込みグレイスケールに変換して表示した結果を図１に示す。  
 ![図１](https://github.com/16ec044/lecture_image_processing/blob/own/image/2-1.png)  
-図１グレイスケール  
+図１グレイスケール原画像  
 ___
 
 原画像を2階調画像にするにはビット深度の半分をしきい値に0と1で分ける。  

@@ -6,7 +6,7 @@ clear; close all;
 
 ORG=imread('skytree.png'); % 原画像の入力
 ORG = rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換
-imagesc(ORG); colormap(gray); colorbar;
+imagesc(ORG); colormap(gray); colorbar;axis image;
 pause;
 
 H = imhist(ORG); %ヒストグラムのデータを列ベクトルEに格納
@@ -31,5 +31,5 @@ for i=1:255
 end
 
 IMG = ORG > max_thres;
-imagesc(IMG); colormap(gray); colorbar;
+imagesc(IMG); colormap(gray); colorbar;axis image;
 pause;
