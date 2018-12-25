@@ -31,6 +31,6 @@ for i=1:255
 end  
 IMG = ORG > max_thres;  
 imagesc(IMG); colormap(gray); colorbar;axis image;  
-２値化を行った画像を図２に示す。
+２値化を行った画像を図２に示す。  
 ![図２](https://github.com/16ec044/lecture_image_processing/blob/own/image/5-2.png)  
 図2　判別分析法による２値画像  

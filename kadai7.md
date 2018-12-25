@@ -28,7 +28,7 @@ mn = min(ORG(:)); % 濃度値の最小値を算出
 mx = max(ORG(:)); % 濃度値の最大値を算出  
 ORG = (ORG-mn)/(mx-mn)*255;  
 imagesc(ORG); colormap(gray); colorbar; axis image; % 画像の表示  
-結果の画像を図４に示す。
+結果の画像を図４に示す。  
 ![図４](https://github.com/16ec044/lecture_image_processing/blob/own/image/7-4.png)  
 図４　ダイナミックレンジを広げた画像  
 ___

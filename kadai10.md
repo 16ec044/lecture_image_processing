@@ -19,13 +19,13 @@ ___
 ソベル法で輪郭抽出を行った場合。  
 IMG = edge(ORG,'sobel'); % エッジ抽出（ソベル法）  
 imagesc(IMG); colormap('gray'); colorbar;axis image;% 画像表示  
-結果を図３に示す。
+結果を図３に示す。  
 ![図３](https://github.com/16ec044/lecture_image_processing/blob/own/image/10-3.png)  
 図３　ソベル法による輪郭抽出  
 ___
 キャニー法で輪郭抽出を行った場合。  
 IMG = edge(ORG,'canny'); % エッジ抽出（キャニー法）  
 imagesc(IMG); colormap('gray'); colorbar;axis image;% 画像表示  
-結果を図４に示す。
+結果を図４に示す。  
 ![図４](https://github.com/16ec044/lecture_image_processing/blob/own/image/10-4.png)  
 図４　キャニー法による輪郭抽出  

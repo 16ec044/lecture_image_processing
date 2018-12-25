@@ -11,13 +11,13 @@ ___
 まずしきい値128で二値化を行う  
 IMG = ORG>128; % 128による二値化  
 imagesc(IMG); colormap(gray); colorbar; axis image;% 画像の表示  
-結果を図２に示す。
+結果を図２に示す。  
 ![図２](https://github.com/16ec044/lecture_image_processing/blob/own/image/6-2.png)  
 図２　しきい値128による二値化  
 ___
 次にディザ法による二値化を行う  
 IMG = dither(ORG); % ディザ法による二値化  
 imagesc(IMG); colormap(gray); colorbar; axis image;% 画像の表示  
-図３に結果を示す。
+図３に結果を示す。  
 ![図３](https://github.com/16ec044/lecture_image_processing/blob/own/image/6-3.png)  
 図３　ディザ法による二値化  
