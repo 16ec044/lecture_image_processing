@@ -17,11 +17,11 @@ imagesc(IMG); colormap(gray); colorbar; axis image;
 図２　しきい値64の画像  
 ___
 同様に96,128,192をしきい値とする画像を表示し、結果を図３～５に示す。  
-![図３]((https://github.com/16ec044/lecture_image_processing/blob/own/image/3-3.png))  
+![図３](https://github.com/16ec044/lecture_image_processing/blob/own/image/3-3.png)  
 図３　しきい値が96の画像  
 ___
-![図４]((https://github.com/16ec044/lecture_image_processing/blob/own/image/3-4.png))  
+![図４](https://github.com/16ec044/lecture_image_processing/blob/own/image/3-4.png)  
 図４　しきい値が128の画像  
 ___
-![図５]((https://github.com/16ec044/lecture_image_processing/blob/own/image/3-5.png))  
+![図５](https://github.com/16ec044/lecture_image_processing/blob/own/image/3-5.png)  
 図５　しきい値が192の画像  
